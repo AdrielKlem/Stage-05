@@ -12,6 +12,9 @@ console.log(RNumber)
 
 
 /* Eventos */
+btnTry.addEventListener('click',handleTryClick)
+btnReset.addEventListener('click',handleResetClick)
+
 // função callback
 function handleTryClick(event) {
     event.preventDefault() // não faça o padrão
@@ -41,6 +44,3 @@ function toggleScreen() {
 function RandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
-
-btnTry.addEventListener('click',handleTryClick)
-btnReset.addEventListener('click',handleResetClick)
