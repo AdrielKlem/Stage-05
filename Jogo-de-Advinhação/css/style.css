@@ -4,18 +4,35 @@
   box-sizing: border-box;
 }
 
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 :root {
   font-size: 62.5%;
 }
 
-body,
-input {
+body {
   background: linear-gradient(315deg, #c2e9fb 0%, #a1c4fd 100%);
   font-size: 1.6rem;
 
   display: grid;
   place-items: center;
   height: 100vh;
+}
+
+body,
+button,
+input {
+  font-family: "DM Sans", sans-serif;
+}
+
+.hide {
+  display: none;
 }
 
 main {
@@ -27,4 +44,52 @@ main {
   width: min(42.8rem, 90%);
 
   margin-top: -12rem;
+
+  text-align: center;
+}
+
+/* Screen 1 */
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+
+  margin-bottom: 1.6rem;
+}
+
+h1,
+p {
+  color: #34355b;
+}
+
+p {
+  opacity: 0.8;
+}
+
+form {
+  margin-top: 4.8rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+input,
+button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  background-color: #dce2e9;
+
+  width: 6rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+button {
+  background-color: #7879f1;
+  color: white;
+  font-weight: bold;
+
+  border-radius: 0 0.4rem 0.4rem 0;
 }
