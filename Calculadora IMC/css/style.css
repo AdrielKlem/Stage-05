@@ -12,6 +12,7 @@
 
   --tt-label: hsl(170, 100%, 14%);
 
+  --bg-input: hsl(212, 23%, 89%);
   --tt-input: hsl(210, 11%, 15%);
   --ot-input: hsl(194, 97%, 31%);
   --bd-input: rgba(73, 80, 87, 0.3);
@@ -76,4 +77,7 @@ form label {
 
 form input {
   width: 100%;
+
+  background-color: var();
+  border: 1px solid var(--bd-input);
 }
