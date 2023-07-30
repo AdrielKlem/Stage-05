@@ -173,6 +173,12 @@ form button:hover {
 }
 
 /* alert error */
+.alert-error.open {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
 
 .alert-error {
   position: absolute;
@@ -187,4 +193,9 @@ form button:hover {
   font-weight: bold;
 
   padding: 0.8rem 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30px);
+  transition: transform 0.5s;
 }
