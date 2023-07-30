@@ -56,4 +56,24 @@ body {
 .title {
   font-size: 3.2rem;
   line-height: 4rem;
+
+  color: var(--tt-heading);
+}
+
+form h1 {
+  margin-bottom: 3.2rem;
+}
+
+form label {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+
+  color: var(--tt-label);
+
+  margin-bottom: 0.8rem; /* label não aceita margin pois é um elemento inline */
+  display: block; /* Por isso essa propriedade*/
+}
+
+form input {
+  width: 100%;
 }
