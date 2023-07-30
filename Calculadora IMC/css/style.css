@@ -88,6 +88,10 @@ form input:focus {
   outline: 2px solid var(--ot-input);
 }
 
+form input::placeholder {
+  color: var(--tt-placeholder);
+}
+
 .input-wrapper + .input-wrapper /* (Ler de trás para frente) Aplicar nesse elemento que tenha essa elemento anteriormente a ele. Ou seja aplicar essas configurações nesse input-wrapper (o segundo), que tenha um input-wrapper (primeiro) antes dele */ {
   margin-top: 1.6rem;
 }
