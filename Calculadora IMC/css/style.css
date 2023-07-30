@@ -83,3 +83,7 @@ form input {
   border: 1px solid var(--bd-input);
   border-radius: 0.4rem;
 }
+
+.input-wrapper + .input-wrapper /* (Ler de trás para frente) Aplicar nesse elemento que tenha essa elemento anteriormente a ele. Ou seja aplicar essas configurações nesse input-wrapper (o segundo), que tenha um input-wrapper (primeiro) antes dele */ {
+  margin-top: 1.6rem;
+}
