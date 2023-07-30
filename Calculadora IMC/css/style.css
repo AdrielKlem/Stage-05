@@ -7,12 +7,28 @@
 :root {
   font-size: 62.5%;
 
+  /* Cores */
+  --tt-heading: hsl(194, 68%, 15%);
+
+  --tt-label: hsl(170, 100%, 14%);
+
+  --tt-input: hsl(210, 11%, 15%);
+  --ot-input: hsl(194, 97%, 31%);
+  --bd-input: rgba(73, 80, 87, 0.3);
+
+  --tt-placeholder: rgba(73, 80, 87, 0.5);
+
+  --tt-button: #fff;
+  --bg-button: hsl(194, 97%, 31%);
+
+  --bg-error: hsl(0, 86%, 59%);
+  --tt-error: #fff;
+
   --color-base-blue: hsl(194, 97%, 31%);
   --color-base-blue-dark: hsl(231, 80%, 8%);
 }
 
-body,
-input {
+body {
   background-color: var(--color-base-blue-dark);
 
   font-family: "Roboto", sans-serif;
@@ -35,4 +51,9 @@ input {
 
   border-radius: 0.6rem;
   box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 3.2rem;
+  line-height: 4rem;
 }
