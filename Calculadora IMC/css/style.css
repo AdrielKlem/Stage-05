@@ -132,3 +132,13 @@ button {
 button:hover {
   background: var(--bg-button-hover);
 }
+
+/* Modal */
+.modal-wrapper {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+
+  display: grid;
+  place-content: center;
+}
