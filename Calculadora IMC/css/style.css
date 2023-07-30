@@ -21,6 +21,7 @@
 
   --tt-button: #fff;
   --bg-button: hsl(194, 97%, 31%);
+  --bg-button-hover: hsl(194, 97%, 15%);
 
   --bg-error: hsl(0, 86%, 59%);
   --tt-error: #fff;
@@ -33,7 +34,13 @@ body {
   background-color: var(--color-base-blue-dark);
 
   font-family: "Roboto", sans-serif;
+}
+
+body,
+input,
+button {
   font-size: 1.6rem;
+  line-height: 2rem;
 }
 
 .container {
@@ -94,4 +101,30 @@ form input::placeholder {
 
 .input-wrapper + .input-wrapper /* (Ler de trás para frente) Aplicar nesse elemento que tenha essa elemento anteriormente a ele. Ou seja aplicar essas configurações nesse input-wrapper (o segundo), que tenha um input-wrapper (primeiro) antes dele */ {
   margin-top: 1.6rem;
+}
+
+button {
+  margin-top: 3.2rem;
+  padding: 1.6rem;
+  width: 100%;
+
+  border-radius: 0.4rem;
+  border: none;
+  background: var(--bg-button);
+  color: var(--tt-button);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--bg-button-hover);
 }
