@@ -10,7 +10,7 @@ form.onsubmit = (event) => {
     const weight = inputWeight.value
     const height = inputHeight.value
 
-    const
+    const result = IMC(weight,height)
 }
 
 function IMC(weight, height) {
