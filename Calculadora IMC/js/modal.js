@@ -1,4 +1,4 @@
-const Modal = {
+export const Modal = {
     open() {
     modalWrapper.classList.add('open')
         
