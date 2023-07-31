@@ -24,6 +24,8 @@ form.onsubmit = (event) => {
    displayResultMessage(result)
 }
 
+form.oninput = () => alertError.close()
+
 function displayResultMessage(result) {
     Modal.message.innerHTML = `Seu IMC é os ${result}`
     Modal.open()
