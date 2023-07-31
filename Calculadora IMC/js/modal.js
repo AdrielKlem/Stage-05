@@ -1,13 +1,12 @@
 export const Modal = {
-    open() {
-    modalWrapper.classList.add('open')
-        
-    }, 
+    wrapper: document.querySelector(".modal-wrapper"),
+    message: document.querySelector(".modal .title span"),
+    buttonClose: document.querySelector(".modal button.close"),
+
+    open() {Modal.wrapper.classList.add('open')}, 
     //open: function() {},
-    close() {
-        modalWrapper.classList.remove('open')
-    }
+    close() {Modal.wrapper.classList.remove('open')}
     //close: function() {},
 }
 
-modalBtnClose.onclick = () => Modal.close()
+Modal.buttonClose.onclick = () => Modal.close()
