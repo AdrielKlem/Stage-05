@@ -9,17 +9,33 @@
 
   --bg-color: hsl(var(--hue), 5%, 7%);
   --text-color: hsl(var(--hue), 40%, 98%);
-  --primary-color: hsl(var(--hue), 100%, 63%);
   --controls-bg-color: hsl(var(--hue), 0%, 14%);
+
+  --primary-color: hsl(var(--hue), 100%, 63%);
   --button-secondary: hsl(var(--hue), 40%, 98%);
 
   font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
 
 html.light {
-  --text-color: hsl(var(--hue), 5%, 7%);
   --bg-color: hsl(var(--hue), 40%, 98%);
+  --text-color: hsl(var(--hue), 5%, 7%);
   --controls-bg-color: hsl(var(--hue), 0%, 14%);
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+  display: none;
+}
+
+#toggle-mode {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  font-size: 3.2rem;
+  list-style: 0;
+
+  color: var(--text-color);
 }
 
 body {
