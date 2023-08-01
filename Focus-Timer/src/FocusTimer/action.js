@@ -1,4 +1,5 @@
 import state from './state.js'
+import * as timer from '.timer'
 
 export function toggleRunning() {
    state.isRunning = document.documentElement.classList.toggle('running')
